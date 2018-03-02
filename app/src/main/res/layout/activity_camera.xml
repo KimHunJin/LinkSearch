@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dxmnd.com.linksearch.CameraActivity">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SurfaceView
+        android:id="@+id/surface_roi_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00ff00" />
+
+    <SurfaceView
+        android:id="@+id/surface_roi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00ff0000" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_capture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_radio_button_checked_black_24dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_history"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/ic_history_black_24dp" />
+
+    <TextView
+        android:id="@+id/txt_ocr_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/img_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
